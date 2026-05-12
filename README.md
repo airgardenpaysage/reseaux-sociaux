@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Réseaux Sociaux</title>
+    <title>Air Garden</title>
     <style>
         :root {
             --bg-color: #0f172a;
             --card-bg: #1e293b;
             --text-color: #f8fafc;
             --accent-color: #38bdf8;
-            --hover-color: #7dd3fc;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             display: flex;
@@ -32,23 +31,14 @@
             text-align: center;
         }
 
-        .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid var(--accent-color);
-            margin-bottom: 15px;
-            object-fit: cover;
-        }
-
         h1 {
-            font-size: 1.5rem;
-            margin-bottom: 5px;
+            font-size: 2rem;
+            margin-bottom: 10px;
         }
 
         p {
             font-size: 0.9rem;
-            opacity: 0.8;
+            opacity: 0.7;
             margin-bottom: 30px;
         }
 
@@ -62,21 +52,20 @@
             background-color: var(--card-bg);
             color: var(--text-color);
             text-decoration: none;
-            padding: 15px;
+            padding: 16px;
             border-radius: 12px;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: 0.3s;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .link-card:hover {
-            transform: translateY(-3px);
             background-color: var(--accent-color);
             color: var(--bg-color);
         }
 
         footer {
-            margin-top: 50px;
+            margin-top: 40px;
             font-size: 0.8rem;
             opacity: 0.5;
         }
@@ -85,10 +74,9 @@
 <body>
 
     <div class="container">
-        <!-- Ta photo ou un avatar -->
-        <img src="https://via.placeholder.com/100" alt="Avatar" class="profile-img">
+        <!-- J'ai retiré l'image et la bulle pour que ce soit plus propre -->
         
-        <h1>Ton Air / Garden</h1>
+        <h1>Air Garden</h1>
         <p>Bienvenue sur mon espace personnel</p>
 
         <div class="links">
