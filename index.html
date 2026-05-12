@@ -8,10 +8,10 @@
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
-            background-color: #ffffff; /* Fond Blanc */
+            background-color: #ffffff;
             margin: 0;
             padding: 20px;
-            color: #1a1a1a; /* Texte Noir */
+            color: #1a1a1a;
             display: flex;
             justify-content: center;
             min-height: 100vh;
@@ -31,7 +31,9 @@
         }
 
         h1 { font-size: 2.2rem; margin-bottom: 5px; color: #000000; }
-        p { font-size: 1rem; color: #666; margin-bottom: 35px; }
+        
+        /* Style pour le sous-titre */
+        p { font-size: 1rem; color: #666; margin-bottom: 35px; font-weight: 500; }
 
         .links { display: flex; flex-direction: column; gap: 15px; }
 
@@ -42,7 +44,7 @@
             padding: 18px;
             border-radius: 12px;
             font-weight: 600;
-            border: 1px solid #e0e0e0; /* Bordure fine grise */
+            border: 1px solid #e0e0e0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -51,8 +53,8 @@
         }
 
         .link-card:hover {
-            background-color: #1a1a1a; /* Devient noir au survol */
-            color: #ffffff; /* Texte devient blanc au survol */
+            background-color: #1a1a1a;
+            color: #ffffff;
         }
 
         i { width: 20px; }
@@ -60,10 +62,11 @@
 </head>
 <body>
     <div class="container">
-        <!-- On ajoute ?v=final pour forcer le navigateur à rafraîchir le logo -->
         <img src="logo.png?v=final" class="logo-header" alt="Logo Air Garden">
         <h1>Air Garden</h1>
-        <p>Aménagement & Entretien</p>
+        <!-- Ton nouveau texte mis à jour ici -->
+        <p>Création, Aménagement & Entretien</p>
+        
         <div class="links">
             <a href="https://www.instagram.com/airgarden.fr/?hl=fr" class="link-card" target="_blank">
                 <i class="fab fa-instagram"></i> Instagram
