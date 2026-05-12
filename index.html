@@ -6,22 +6,14 @@
     <title>Air Garden</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --bg-color: #ffffff; /* Fond blanc pur */
-            --text-color: #1a1a1a; /* Noir très foncé pour le texte */
-            --accent-color: #f0f0f0; /* Gris très clair pour le survol */
-            --card-border: #e0e0e0; /* Bordure grise légère */
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff; /* Fond Blanc */
             margin: 0;
             padding: 20px;
-            color: var(--text-color);
+            color: #1a1a1a; /* Texte Noir */
             display: flex;
             justify-content: center;
-            align-items: flex-start;
             min-height: 100vh;
         }
 
@@ -29,81 +21,49 @@
             width: 100%;
             max-width: 350px;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
-        /* --- LOGO --- */
         .logo-header {
-            width: 200px; /* Un peu plus grand pour bien le voir sur le blanc */
+            width: 180px;
             height: auto;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
-        h1 { 
-            font-size: 2rem; 
-            margin: 0 0 5px 0;
-            letter-spacing: 1px;
-            font-weight: 700;
-        }
+        h1 { font-size: 2.2rem; margin-bottom: 5px; color: #000000; }
+        p { font-size: 1rem; color: #666; margin-bottom: 35px; }
 
-        p {
-            font-size: 0.9rem;
-            color: #666; /* Gris pour le sous-titre */
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        /* --- BOUTONS NOIRS SUR FOND BLANC --- */
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
+        .links { display: flex; flex-direction: column; gap: 15px; }
 
         .link-card {
-            background-color: transparent;
-            color: var(--text-color);
+            background-color: #ffffff;
+            color: #1a1a1a;
             text-decoration: none;
-            padding: 16px;
-            border-radius: 8px; /* Coins un peu plus carrés pour le style minimaliste */
-            font-weight: 500;
-            border: 1px solid var(--card-border);
+            padding: 18px;
+            border-radius: 12px;
+            font-weight: 600;
+            border: 1px solid #e0e0e0; /* Bordure fine grise */
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
 
         .link-card:hover {
-            background-color: var(--text-color);
-            color: white; /* Le bouton devient noir et le texte blanc au survol */
-            border-color: var(--text-color);
-            transform: translateY(-2px);
+            background-color: #1a1a1a; /* Devient noir au survol */
+            color: #ffffff; /* Texte devient blanc au survol */
         }
 
-        i { 
-            width: 20px; 
-            font-size: 1.1rem; 
-        }
-
-        footer {
-            margin-top: 60px;
-            font-size: 0.7rem;
-            color: #999;
-        }
+        i { width: 20px; }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- Ton logo -->
-        <img src="logo.png?v=5" class="logo-header" alt="Logo Air Garden">
-
+        <!-- On ajoute ?v=final pour forcer le navigateur à rafraîchir le logo -->
+        <img src="logo.png?v=final" class="logo-header" alt="Logo Air Garden">
         <h1>Air Garden</h1>
         <p>Aménagement & Entretien</p>
-        
         <div class="links">
             <a href="https://www.instagram.com/airgarden.fr/?hl=fr" class="link-card" target="_blank">
                 <i class="fab fa-instagram"></i> Instagram
@@ -120,9 +80,6 @@
             <a href="mailto:rg.airgarden@gmail.com@gmail.com" class="link-card">
                 <i class="fas fa-envelope"></i> Contact Email</a>
         </div>
-
-        <footer>© 2026 Air Garden</footer>
     </div>
-
 </body>
 </html>
