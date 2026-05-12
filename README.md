@@ -13,7 +13,7 @@
         }
 
         body {
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             display: flex;
@@ -32,40 +32,42 @@
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-bottom: 10px;
+            font-weight: 700;
         }
 
         p {
-            font-size: 0.9rem;
-            opacity: 0.7;
+            font-size: 1rem;
+            opacity: 0.8;
             margin-bottom: 30px;
         }
 
         .links {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 16px;
         }
 
         .link-card {
             background-color: var(--card-bg);
             color: var(--text-color);
             text-decoration: none;
-            padding: 16px;
-            border-radius: 12px;
+            padding: 18px;
+            border-radius: 14px;
             font-weight: 600;
-            transition: 0.3s;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .link-card:hover {
+            transform: scale(1.02);
             background-color: var(--accent-color);
             color: var(--bg-color);
         }
 
         footer {
-            margin-top: 40px;
+            margin-top: 50px;
             font-size: 0.8rem;
             opacity: 0.5;
         }
@@ -74,18 +76,15 @@
 <body>
 
     <div class="container">
-        <!-- J'ai retiré l'image et la bulle pour que ce soit plus propre -->
-        
         <h1>Air Garden</h1>
         <p>Bienvenue sur mon espace personnel</p>
 
         <div class="links">
-            <!-- Remplace les # par tes vrais liens -->
-            <a href="https://www.instagram.com/airgarden.fr/?hl=fr" class="link-card" target="_blank">Instagram</a>           
-            <a href="https://www.linkedin.com/in/air-garden-5b4390119/" class="link-card" target="_blank">LinkedIn</a>
-            <a href="https://www.tiktok.com/@airgarden_paysage?lang=fr" class="link-card" target="_blank">TikTok</a>
-            <a href="https://www.youtube.com/@airgarden_paysage" class="link-card" target="_blank">YouTube</a>
-            <a href="mailto:rg.airgarden@gmail.com@gmail.com" class="link-card">Contact Email</a>
+            <a href="https://vrai-lien-instagram.com" class="link-card" target="_blank">Instagram</a>
+            <a href="https://vrai-lien-linkedin.com" class="link-card" target="_blank">LinkedIn</a>
+            <a href="https://vrai-lien-tiktok.com" class="link-card" target="_blank">TikTok</a>
+            <a href="https://vrai-lien-youtube.com" class="link-card" target="_blank">YouTube</a>
+            <a href="mailto:votre-email@exemple.com" class="link-card">Contact Email</a>
         </div>
     </div>
 
