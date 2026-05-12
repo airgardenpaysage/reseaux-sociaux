@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Garden</title>
-    <!-- Chargement des icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --bg-color: #0f172a;
-            --card-bg: rgba(30, 41, 59, 0.7); /* Transparence pour voir le logo à travers les boutons */
-            --text-color: #f8fafc;
+            --card-bg: rgba(15, 23, 42, 0.6); /* Boutons un peu plus transparents */
+            --text-color: #ffffff;
             --accent-color: #38bdf8;
         }
 
         body {
             font-family: 'Segoe UI', sans-serif;
             background-color: var(--bg-color);
-            /* --- RÉGLAGES DU LOGO --- */
-            background-image: url('logo.png');
+            /* --- FORCE LA MISE À JOUR ICI --- */
+            background-image: url('logo.png?v=2');
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 85%; /* Augmenté pour qu'il soit plus grand */
+            background-size: 90%; 
             background-attachment: fixed;
-            /* ------------------------ */
             color: var(--text-color);
             display: flex;
             flex-direction: column;
@@ -32,15 +30,14 @@
             min-height: 100vh;
             margin: 0;
             padding: 20px;
-            position: relative;
         }
 
-        /* Le voile sombre est ici réduit à 0.3 pour laisser briller le logo */
         body::before {
             content: "";
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(15, 23, 42, 0.3); 
+            /* LUMINOSITÉ MAX : Passage à 0.15 */
+            background: rgba(15, 23, 42, 0.15); 
             z-index: -1;
         }
 
@@ -52,67 +49,37 @@
         }
 
         h1 { 
-            font-size: 2.5rem; 
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Ombre pour détacher le texte du fond */
-        }
-
-        p { 
-            font-size: 1.1rem; 
-            opacity: 0.9; 
-            margin-bottom: 35px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-
-        .links { 
-            display: flex; 
-            flex-direction: column; 
-            gap: 15px; 
+            font-size: 2.8rem; 
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8); /* Ombre forte pour lire sur le logo clair */
         }
 
         .link-card {
             background-color: var(--card-bg);
-            color: var(--text-color);
+            color: white;
             text-decoration: none;
             padding: 18px;
             border-radius: 12px;
-            font-weight: 600;
-            transition: 0.3s;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-weight: bold;
+            border: 1px solid rgba(255, 255, 255, 0.3);
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 15px;
-            backdrop-filter: blur(8px); /* Effet de verre dépoli très pro */
-        }
-
-        .link-card i {
-            font-size: 1.3rem;
-            width: 25px;
-            text-align: center;
+            backdrop-filter: blur(10px);
+            margin-bottom: 15px;
+            transition: 0.3s;
         }
 
         .link-card:hover {
             background-color: var(--accent-color);
-            color: var(--bg-color);
-            transform: scale(1.03);
-            border-color: var(--accent-color);
-        }
-
-        footer {
-            margin-top: 50px;
-            font-size: 0.8rem;
-            opacity: 0.6;
-            z-index: 1;
+            color: #000;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>Air Garden</h1>
         <p>Bienvenue sur mon espace personnel</p>
-
         <div class="links">
             <a href="https://www.instagram.com/airgarden.fr/?hl=fr" class="link-card" target="_blank">
                 <i class="fab fa-instagram"></i> Instagram
@@ -127,12 +94,8 @@
                 <i class="fab fa-youtube"></i> YouTube
             </a>
             <a href="mailto:rg.airgarden@gmail.com@gmail.com" class="link-card">
-                <i class="fas fa-envelope"></i> Contact Email
-            </a>
+                <i class="fas fa-envelope"></i> Contact Email</a>
         </div>
     </div>
-
-    <footer>© 2026 - Créé avec passion</footer>
-
 </body>
 </html>
